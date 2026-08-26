@@ -14,7 +14,7 @@ execute unless score #toad_amiibo Selected matches 0..1 run scoreboard players s
 execute unless score #mario_amiibo Selected matches 0..1 run scoreboard players set #mario_amiibo Selected 0
 execute unless score #boo_amiibo Selected matches 0..1 run scoreboard players set #boo_amiibo Selected 0
 execute unless score #luigi_amiibo Selected matches 0..1 run scoreboard players set #luigi_amiibo Selected 0
-execute if data storage luigis_mansion:data current_state.3ds_remake{shown_game_boy_horror_part:0b} run scoreboard players set #global_3ds_remake_gallery Selected 0
+execute if data storage luigis_mansion:data current_state.3ds_remake{shown_game_boy_horror_part:0b} run scoreboard players set #global_3ds_remake_gallery Selected 1
 execute if data storage luigis_mansion:data current_state.3ds_remake.trophy.beginner{done:0b} run scoreboard players set #toad_amiibo Selected 0
 execute if data storage luigis_mansion:data current_state.3ds_remake.trophy.easy{done:0b} run scoreboard players set #mario_amiibo Selected 0
 execute if data storage luigis_mansion:data current_state.3ds_remake.trophy.normal{done:0b} run scoreboard players set #boo_amiibo Selected 0

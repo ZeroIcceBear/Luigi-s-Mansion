@@ -7,10 +7,8 @@ execute if entity @s[scores={ActionTime=1}] store result storage luigis_mansion:
 execute if entity @s[scores={ActionTime=21}] run summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.lamp"},Tags:["no_ai","freeze_animation","falling_chandelier_end","this_entity"],item_display:"head"}
 execute if entity @s[scores={ActionTime=21}] run summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.lamp"},Tags:["no_ai","freeze_animation","falling_chandelier_rod","this_entity"],item_display:"head"}
 execute if entity @s[scores={ActionTime=21}] run data modify entity @s data.rod set from entity @e[distance=..0.1,tag=falling_chandelier_rod,limit=1] UUID
-execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_end,limit=1] brightness set from entity @s brightness
 execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_end,limit=1] item set from entity @s item
 execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_end,limit=1] item merge from entity @s item.components."minecraft:custom_data".model_data.end
-execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_rod,limit=1] brightness set from entity @s brightness
 execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_rod,limit=1] item set from entity @s item
 execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_rod,limit=1] item merge from entity @s item.components."minecraft:custom_data".model_data.rod
 execute if entity @s[scores={ActionTime=21}] as @e[tag=this_entity] positioned as @s run teleport @s ~ ~ ~ ~ 0
@@ -64,5 +62,7 @@ execute if score #temp Time matches ..-1 run scoreboard players operation #temp 
 scoreboard players add #temp Time 100
 $execute if entity @s[scores={ActionTime=11..132}] store result entity @e[nbt={UUID:$(rod)},limit=1] transformation.scale[1] float 0.01 run scoreboard players get #temp Time
 scoreboard players reset #temp Time
+$execute at @e[nbt={UUID:$(rod)},limit=1] run data modify entity @e[distance=..0.1,tag=falling_chandelier_end,limit=1] brightness set from entity @s brightness
+$data modify entity @e[nbt={UUID:$(rod)},limit=1] brightness set from entity @s brightness
 
 execute store result score @s PositionY run data get entity @s Pos[1] 10

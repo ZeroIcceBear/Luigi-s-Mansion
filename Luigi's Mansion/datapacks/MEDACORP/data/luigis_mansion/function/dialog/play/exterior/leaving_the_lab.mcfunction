@@ -23,6 +23,7 @@ execute if loaded 787 90 15 positioned 787 89.9375 15 unless entity @e[tag=e_gad
 data remove storage luigis_mansion:data entity
 
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"781 89.9375 8.0 90 0"}
+execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 2 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/leaving_the_lab
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"743 96 -5 30 -35"}
 execute if score #dialog Dialog matches 1..45 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s facing 720 110 8.0",teleport:"^ ^ ^0.02 30 -35"}

@@ -14,6 +14,7 @@ data modify storage luigis_mansion:data reflections[-1].no_sync.tags set from en
 data modify storage luigis_mansion:data reflections[-1].data.item_display set from entity @s item_display
 data modify storage luigis_mansion:data reflections[-1].data.item set from entity @s item
 data modify storage luigis_mansion:data reflections[-1].data.item merge from storage luigis_mansion:data reflections[-1].data.item.components."minecraft:custom_data".mirror
+data modify storage luigis_mansion:data reflections[-1].data.brightness set from entity @s brightness
 data modify storage luigis_mansion:data reflections[-1].data.transformation set from entity @s transformation
 execute if data storage luigis_mansion:data reflections[-1].data.transformation store result storage luigis_mansion:data reflections[-1].data.transformation.translation[0] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.transformation.translation[0] -100
 execute if data storage luigis_mansion:data reflections[-1].data.transformation store result storage luigis_mansion:data reflections[-1].data.transformation.left_rotation[1] float 0.01 run data get storage luigis_mansion:data reflections[-1].data.transformation.left_rotation[1] -100

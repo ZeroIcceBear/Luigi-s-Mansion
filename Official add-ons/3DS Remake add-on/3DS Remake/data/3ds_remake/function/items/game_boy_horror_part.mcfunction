@@ -1,6 +1,3 @@
-tag @s add me
-execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{no_collect_animation:["3ds_remake:game_boy_horror_part"]} as @e[tag=collector,limit=1] run function luigis_mansion:entities/luigi/animation/set/collect_item with entity @e[tag=me,limit=1] equipment.head
-tag @s remove me
 data modify storage luigis_mansion:data current_state.3ds_remake.obtained_game_boy_horror_part set value 1b
 execute if score #players Totals matches 1 run tellraw @a {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"3ds_remake:message.player.game_boy_horror_part"}]}
 execute if score #players Totals matches 2.. run tellraw @a {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"3ds_remake:message.player.game_boy_horror_part.more"}]}

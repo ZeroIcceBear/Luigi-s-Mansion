@@ -1,0 +1,1 @@
+$execute positioned ^ ^1.56 ^0.07 as @e[tag=mario_model,scores={PassiveNr=$(id)}] run data modify entity @s brightness set from entity @e[tag=furniture,distance=..0.1,limit=1] brightness

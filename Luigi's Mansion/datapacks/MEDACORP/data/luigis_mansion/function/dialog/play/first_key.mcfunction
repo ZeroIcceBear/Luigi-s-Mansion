@@ -34,7 +34,7 @@ execute if score #dialog Dialog matches 416..420 as @a[tag=same_room] run functi
 execute if score #dialog Dialog matches 421..480 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~-0.008 ~-0.02 9.0 90 75"}
 execute if score #dialog Dialog matches 481..500 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"751.3 10.3 9.0 90 75"}
 execute if score #dialog Dialog matches 500 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
-execute if score #dialog Dialog matches 1..370 at @e[tag=same_room,tag=first_key] run particle minecraft:dust{color:16750592,scale:1f} ~ ~1.4 ~ 0.2 0.2 0.2 0 5
+execute if score #dialog Dialog matches 1..370 at @e[tag=same_room,tag=first_key] run particle minecraft:dust{color:16750592,scale:1f} ~ ~ ~ 0.2 0.2 0.2 0 5
 execute if score #dialog Dialog matches 1..40 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~-0.025
 execute if score #dialog Dialog matches 41..100 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~0.025
 execute if score #dialog Dialog matches 101..120 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~0.001 ~-0.025

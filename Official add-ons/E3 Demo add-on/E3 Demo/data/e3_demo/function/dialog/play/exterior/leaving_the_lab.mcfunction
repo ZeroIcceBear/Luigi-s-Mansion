@@ -21,6 +21,7 @@ execute as @a[tag=this_player,limit=1,tag=game_boy_horror_menu] run function lui
 tag @e[tag=door,tag=same_room] remove freeze_animation
 
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"755 89.9375 8.0 90 0"}
+execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 2 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/leaving_the_lab
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/leaving_the_lab
 execute if score #dialog Dialog matches 1 run function luigis_mansion:room/exterior/open_gate

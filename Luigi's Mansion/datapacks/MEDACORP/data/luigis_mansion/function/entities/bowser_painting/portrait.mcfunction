@@ -1,0 +1,1 @@
+$execute positioned ^ ^1.36 ^0.07 as @e[tag=bowser_painting_model,scores={PassiveNr=$(id)}] run data modify entity @s brightness set from entity @e[tag=furniture,distance=..0.1,limit=1] brightness

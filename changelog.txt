@@ -1,9 +1,9 @@
-v?:
+v3.8:
 * Updated to 26.2
 * Added title menu, you now have 3 save games in 1 map, just like you get 3 games on the original
-** previous unsaved state will be saved to slot 1 upon upgrading
-** previous saved state will be saved to slot 2 upon upgrading
-** all players leaving the world now discards unsaved data
+** Previous unsaved state will be saved to slot 1 upon upgrading
+** Previous saved state will be saved to slot 2 upon upgrading
+** All players leaving the world now discards unsaved data
 ** You can show the settings in this menu too
 *** (Global) 3DS Remake gallery is excluded here since it only appears when you've shown E. Gadd the Game Boy Horror part
 *** Debugging single entity/furniture hitbox is excluded here since you cannot face one here
@@ -72,6 +72,7 @@ v?:
 * Fixed entities disappeared near the bottom of the screen
 * Fixed rotating without moving would not reset your idle time (upon body turning), causing idle animations to start and get canceled as you were rotating
 * Fixed catching multiple ghosts at once was impossible due to oversight of v3.5 changes
+* Fixed vacuum couldn't extinguish candle flames
 * Fixed interact didn't work on portaits in:
 ** Study
 ** Nursery
@@ -105,6 +106,7 @@ v?:
 * Fixed Bowser death animation camera movement didn't work properly on non-every-tick teleport frequencies
 * Fixed Bowser and Mario had no hitbox
 * Fixed installing the 3DS Remake didn't grant the water plant task if you had obtained money from watering a plant
+* Fixed installing and notes listed wrong version number
 * Removed underground lab's "Sorry to bother you", "Load old data", and "The Ghost Portrificationizer Room" options
 * Removed ghost potrificationizer room repeat dialog
 * Removed "Full to Bursting You Say?" advancement, as it's now impossible to achieve

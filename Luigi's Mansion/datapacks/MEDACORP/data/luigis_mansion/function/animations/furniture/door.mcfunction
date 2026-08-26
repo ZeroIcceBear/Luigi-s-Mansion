@@ -12,6 +12,6 @@ data modify storage luigis_mansion:data passive.animation set from entity @s dat
 data modify storage luigis_mansion:data passive.brightness.block set from entity @s brightness.block
 data modify storage luigis_mansion:data passive.tags set from entity @s Tags
 tag @s add this_entity
-$execute if entity @s[tag=freeze_animation] as @e[type=minecraft:item_display,tag=door_model,scores={PassiveNr=$(id)}] run function luigis_mansion:animations/passive/frozen
+$execute if entity @s[tag=freeze_animation] as @e[type=minecraft:item_display,tag=door_model,scores={PassiveNr=$(id)}] run function luigis_mansion:animations/furniture/door/frozen
 $execute if entity @s[tag=!freeze_animation] as @e[type=minecraft:item_display,tag=door_model,scores={PassiveNr=$(id)}] rotated ~ 0 run function luigis_mansion:animations/furniture/door/main with storage luigis_mansion:data macro.passive
 tag @s remove this_entity

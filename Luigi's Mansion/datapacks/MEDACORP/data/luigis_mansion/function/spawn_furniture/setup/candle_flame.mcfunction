@@ -8,10 +8,11 @@ execute if data storage luigis_mansion:data candle_flame{type:"incense"} run sco
 execute if data storage luigis_mansion:data candle_flame{type:"incense"} as @e[tag=this_entity,tag=candle_flame,limit=1] store result score @s HomeRotationY run data get entity @s Rotation[0]
 execute if data storage luigis_mansion:data candle_flame{type:"purple"} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add purple
 execute if data storage luigis_mansion:data candle_flame{lit:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add lit
-execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if entity @e[tag=this_entity,tag=candle_flame,limit=1,tag=lit] run function luigis_mansion:entities/furniture/type/candle_flame/light
-execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if entity @e[tag=this_entity,tag=candle_flame,limit=1,tag=!lit] run function luigis_mansion:entities/furniture/type/candle_flame/extinguish
-execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if data storage luigis_mansion:data candle_flame{cannot_extinguish:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add cannot_extinguish
 execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if data storage luigis_mansion:data candle_flame{always_burn:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add always_burn
+execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if data storage luigis_mansion:data candle_flame{always_burn:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add lit
+execute unless data storage luigis_mansion:data candle_flame{type:"incense"} if data storage luigis_mansion:data candle_flame{cannot_extinguish:1b} run tag @e[tag=this_entity,tag=candle_flame,limit=1] add cannot_extinguish
+execute unless data storage luigis_mansion:data candle_flame{type:"incense"} as @e[tag=this_entity,tag=candle_flame,limit=1,tag=lit] run function luigis_mansion:entities/furniture/type/candle_flame/light
+execute unless data storage luigis_mansion:data candle_flame{type:"incense"} as @e[tag=this_entity,tag=candle_flame,limit=1,tag=!lit] run function luigis_mansion:entities/furniture/type/candle_flame/extinguish
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add elemental_source
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add fire_elemental_source
 execute if data storage luigis_mansion:data candle_flame.fire_elemental_source run tag @e[tag=this_entity,tag=candle_flame,limit=1] add enabled
