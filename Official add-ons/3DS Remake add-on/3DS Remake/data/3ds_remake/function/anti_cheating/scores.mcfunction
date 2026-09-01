@@ -3,6 +3,11 @@ scoreboard objectives add Glowing dummy
 scoreboard objectives add RespawnTimer dummy
 scoreboard objectives add StrobulbCharge dummy
 
+# Smooth element meter
+scoreboard players set #398 Constants 398
+# Smooth element meter
+scoreboard players set #440 Constants 440
+
 execute store result score #non_gooigis Totals if entity @a[tag=!spectator,tag=!gooigi]
 execute store result score #all_non_gooigis Totals if entity @a[tag=!gooigi]
 

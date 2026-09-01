@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function 3ds_remake:animations/luigi/shake/normal/head
+execute if score #mirrored Selected matches 1 run function 3ds_remake:animations/luigi/shake/mirrored/head

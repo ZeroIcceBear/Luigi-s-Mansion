@@ -117,6 +117,7 @@ luigis_mansion:release_boos_spawn                     | No          |           
 luigis_mansion:released_boos_call                     | Yes         |                                                 | Thanks for flushing them out...             | luigis_mansion:released_boos_talk
 luigis_mansion:released_boos_talk                     | Yes         |                                                 | I call it the Boo Radar!                    | luigis_mansion:underground_lab + obtain item Boo Radar
 luigis_mansion:room_clear_chest_spawns                | Yes         | Field scanned_entity                            | Camera focus on room clear chest            | 
+luigis_mansion:search_fake_wall                       | Yes         | Field scanning_player                           | Huh? (same as scan 96 but no scanning)      | 
 luigis_mansion:scan/entity/biff_atlas                 | Yes         | Fields scanned_entity and scanning_player       | Scan Biff Atlas                             | 
 luigis_mansion:scan/entity/blue_clockwork_soldier     | Yes         | Fields scanned_entity and scanning_player       | Scan blue Clockwork Soldier                 | 
 luigis_mansion:scan/entity/chauncey                   | Yes         | Fields scanned_entity and scanning_player       | Scan Chauncey                               | 
@@ -303,6 +304,8 @@ luigis_mansion:water_element_medal                    | Yes         |           
 3ds_remake:amiibo/mario                               | Yes         |                                                 | Toggle Mario amiibo                         | Toggle Mario amiibo
 3ds_remake:amiibo/toad                                | Yes         |                                                 | Toggle Toad amiibo                          | Toggle Toad amiibo
 3ds_remake:blockade_spawns                            | Yes         | Door                                            | Camera focus on spawning blockade           | 
+3ds_remake:blockade_disappears                        | Yes         | Door                                            | Camera focus on despawning blockade         | 
+3ds_remake:front_door                                 | Yes         | Field player                                    | Wanna leave the mansion?                    | Warp to lab (choice)
 3ds_remake:future_e_gadd                              | Yes         |                                                 | Call from Evershade Valley                  | luigis_mansion:underground_lab
 3ds_remake:gallery/found                              | Yes         |                                                 | Install the gameBoy Horror Part             | Clear gallery + add Scan Furniture GameBoy Horror option
 3ds_remake:gallery/no_found                           | Yes         |                                                 | Go Find the GameBoy Horror Part             | 
@@ -318,6 +321,7 @@ luigis_mansion:water_element_medal                    | Yes         |           
 3ds_remake:hidden/first_entrance                      | Yes         | Field player                                    | Look around the foyer                       | 
 3ds_remake:hidden/move_storage_room_wall              | Yes         |                                                 | Moving the fake wall                        | Technical flag moved_wall set
 3ds_remake:hidden/release_boos                        | Yes         |                                                 | Pressed the Boo hatch button                | luigis_mansion:released_boos_call + technical flag released_boos set
+3ds_remake:locked_area_door                           | Yes         | Field player                                    | Try opening locked area door                | 
 3ds_remake:portrait_battle/clear                      | Yes         |                                                 | Complete a portrait battle                  | Get portraits, save score, warp to Gallery or 3ds_remake:portrait_battle/start (choice)
 3ds_remake:portrait_battle/start                      | Yes         |                                                 | Start a portrait battle                     | 
 3ds_remake:scan/entity/jarvis                         | Yes         | Fields scanned_entity and scanning_player       | Scan Jarvis                                 | 

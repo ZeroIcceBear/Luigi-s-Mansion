@@ -1,3 +1,21 @@
+v???:
+* Fixed typo'd Add-on name
+* Added the luigi animation (3DS remake) "shake"
+* Added missing 3DS Remake dialogs:
+** Blockade despawns
+** Front door
+** Locked area door
+* Changed element meter to decrease smoothly when the 3DS Remake is installed
+* Fixed typo in title screen track name
+* Fixed missing word in title menu's copy menu
+* Fixed the flashlight item sometimes didn't match whether it was actually on or off
+* Fixed R.I.P. signs were called RIP signs
+* Fixed (3DS Remake) gallery portrait menus always listed the ghost, even if it hadn't been caught
+* Fixed 3DS hidden mansion pipe room was missing Pink Flying Fish
+* Fixed Extensive Training low results lines used an incorrect word
+* Removed ability to leave the mansion without the 3DS Remake being installed
+** Even with the 3DS Remake installed, you can no longer leave the E3 Demo's original mansion
+
 v3.8:
 * Updated to 26.2
 * Added title menu, you now have 3 save games in 1 map, just like you get 3 games on the original

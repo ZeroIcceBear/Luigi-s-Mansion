@@ -34,4 +34,4 @@ execute if score #dialog Dialog matches 300 as @a[tag=same_room] run function lu
 execute if score #dialog Dialog matches 340 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 340 run scoreboard players add #observatory Wave 1
 execute if score #dialog Dialog matches 340 run scoreboard players set #dialog Dialog -1
-tag @a[tag=observing_player,limit=1] remove observing_player
+tag @e[tag=observing_player,limit=1] remove observing_player

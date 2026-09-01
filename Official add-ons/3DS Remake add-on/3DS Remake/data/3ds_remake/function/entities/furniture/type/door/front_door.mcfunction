@@ -1,0 +1,2 @@
+execute unless data storage luigis_mansion:data dialogs[{room:1}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"front_door"},progress:0,room:1,player:0}
+execute if data storage luigis_mansion:data dialogs[{name:{namespace:"3ds_remake",id:"front_door"},player:0}] store result storage luigis_mansion:data dialogs[{name:{namespace:"3ds_remake",id:"front_door"},player:0}].player int 1 run scoreboard players get @e[tag=searcher,limit=1] ID

@@ -1,6 +1,6 @@
 execute if entity @s[scores={PositionIntZ=-16}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~ ~ ~2"}
 execute unless score #extra_gallery Selected matches 1 if entity @s[scores={PositionIntZ=-41}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~ ~ ~1"}
-execute if score #extra_gallery Selected matches 1 if entity @s[scores={PositionIntZ=-41}] run function luigis_mansion:selection_menu/extra_gallery_door/spectator_menu
+execute if score #extra_gallery Selected matches 1 if entity @s[scores={PositionIntZ=-41},gamemode=spectator] run function luigis_mansion:selection_menu/extra_gallery_door/spectator_menu
 execute if entity @s[scores={PositionIntX=778}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~-1 ~ ~"}
 execute if entity @s[scores={PositionIntX=764,PositionIntZ=-40..-36}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~1 ~ ~"}
 execute if entity @s[scores={PositionIntX=764,PositionIntZ=-30..-27}] run function luigis_mansion:entities/luigi/move/wall_warp_teleport {teleport:"~1 ~ ~"}

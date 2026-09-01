@@ -1,0 +1,2 @@
+execute unless entity @a[tag=extra_gallery_door_menu,tag=!camera] at @s as @e[tag=luigi,tag=searcher,limit=1,sort=nearest] run function luigis_mansion:entities/luigi/move/execute {execute:"positioned ^ ^ ^0.5 align xz",teleport:"~0.5 ~ ~0.5 ~-180 ~"}
+execute unless entity @a[tag=extra_gallery_door_menu,tag=!camera] as @e[tag=luigi,tag=searcher,limit=1,sort=nearest] run function luigis_mansion:entities/luigi/run_command_as_owner {command:"exeute if entity @s[tag=!using_selection_menu] run function luigis_mansion:selection_menu/extra_gallery_door/original_menu"}

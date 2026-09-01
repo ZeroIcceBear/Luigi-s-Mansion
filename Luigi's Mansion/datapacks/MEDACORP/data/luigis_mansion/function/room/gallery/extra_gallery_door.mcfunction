@@ -1,1 +1,0 @@
-tag @a[tag=this_player,limit=1] remove wall_warp

@@ -1,0 +1,9 @@
+data modify storage luigis_mansion:data entity set value {speed:20}
+execute if entity @s[tag=flipped_gravity] run data modify storage luigis_mansion:data entity.speed set value -20
+$execute if block ~ ~ ~ #luigis_mansion:all_ignore run function $(namespace):spawn_entities/item/$(id)
+$execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ if block ~ ~ ~ #luigis_mansion:all_ignore run function $(namespace):spawn_entities/item/$(id)
+$execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-2 ~ ~ if block ~ ~ ~ #luigis_mansion:all_ignore run function $(namespace):spawn_entities/item/$(id)
+$execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-2 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-1 ~ ~1 if block ~ ~ ~ #luigis_mansion:all_ignore run function $(namespace):spawn_entities/item/$(id)
+$execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-2 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-1 ~ ~1 unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~ ~ ~-2 if block ~ ~ ~ #luigis_mansion:all_ignore run function $(namespace):spawn_entities/item/$(id)
+execute unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~1 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-2 ~ ~ unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~-1 ~ ~1 unless block ~ ~ ~ #luigis_mansion:all_ignore positioned ~ ~ ~-2 unless block ~ ~ ~ #luigis_mansion:all_ignore run scoreboard players set #temp2 LastTotalDamage 1
+execute if score #temp2 LastTotalDamage matches 1 run scoreboard players operation #temp LastTotalDamage = #temp TotalDamage

@@ -1,6 +1,7 @@
 tag @s add searcher
 scoreboard players operation #temp Room = @s Room
 execute at @s[scores={Shrunk=0},tag=!gooigi] unless entity @s[scores={OpenMapTime=1..}] rotated ~ 0 positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 if entity @e[distance=..1,tag=door,tag=!open_door,tag=!barricaded,tag=!barricaded_double,tag=!unopenable,tag=affected_by_interact,tag=!no_ai,limit=1] run function luigis_mansion:items/interact/try_opening_door
+execute at @s[scores={Shrunk=0},tag=!gooigi] unless entity @s[scores={OpenMapTime=1..}] rotated ~ 0 positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 if entity @e[distance=..1,tag=door,tag=!open_door,tag=unopenable,tag=affected_by_interact,tag=!no_ai,limit=1] run function luigis_mansion:items/interact/try_checking_door
 execute at @s[scores={Shrunk=0},tag=!try_opening_door,tag=!gooigi] unless entity @s[scores={OpenMapTime=1..}] rotated ~ 0 positioned ^ ^1.1 ^2 if entity @e[distance=..2,tag=can_talk_to,tag=!ghost,tag=!no_ai,limit=1] run function luigis_mansion:items/interact/try_talking
 execute at @s[scores={Shrunk=0},tag=!try_opening_door,tag=!talk,tag=!gooigi] unless entity @s[scores={OpenMapTime=1..}] rotated ~ 0 positioned ^ ^1.1 ^2 if entity @e[distance=..2,tag=can_talk_to,tag=ghost,tag=!no_ai,tag=visible,scores={VulnerableTime=0},limit=1] run function luigis_mansion:items/interact/try_talking_with_ghost
 execute at @s[scores={Shrunk=0},tag=!try_opening_door,tag=!talk] unless entity @s[scores={OpenMapTime=1..}] run function 3ds_remake:items/interact/try_triggering_furniture

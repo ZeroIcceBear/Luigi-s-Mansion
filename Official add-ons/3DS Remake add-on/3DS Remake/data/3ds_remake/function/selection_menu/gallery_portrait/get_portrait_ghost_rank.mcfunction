@@ -1,1 +1,1 @@
-$return run data get storage $(namespace):data current_state.portrait_ghost_ranks.$(id)
+$return run data get storage luigis_mansion:data current_state.$(namespace).portrait_ghost_ranks.$(id)

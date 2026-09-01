@@ -1,2 +1,3 @@
 execute if entity @s[nbt=!{data:{inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}]}}] run function luigis_mansion:items/flashlight/give
+execute if entity @s[tag=!poltergust_grabbed,tag=had_flashlight_on] run function luigis_mansion:items/flashlight/effects/turn_off
 execute if entity @s[tag=!death_animation,tag=!revive_animation,tag=poltergust_grabbed,nbt={data:{inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}]}}] run function luigis_mansion:items/flashlight/tick

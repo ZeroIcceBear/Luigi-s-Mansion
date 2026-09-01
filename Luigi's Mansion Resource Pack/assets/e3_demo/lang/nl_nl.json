@@ -59,6 +59,7 @@
     "e3_demo:furniture.chain_suspended_ovoid_lamp": "Ketting opgehangen eivormige lamp",
     "e3_demo:furniture.grandfather_clock": "Staande klok",
     "e3_demo:furniture.poker_ghost_portrait": "Pokerspook-portret",
+    "e3_demo:furniture.saxophone": "Saxofoon",
     "e3_demo:furniture.silver_candelabra": "Zilveren kandelaar",
     "e3_demo:furniture.simple_triple_candelabra": "Eenvoudige drievoudige kandelaar",
     "e3_demo:furniture.top_hat_ghost_portrait": "Hogehoedspook-portret",
@@ -159,5 +160,5 @@
     "e3_demo:subtitles.item.poltergust_500.hit": "Spookzuiger 500 bonkt",
     "e3_demo:subtitles.item.poltergust_500.reel_in": "Spookzuiger 500 haalt binnen",
     "e3_demo:subtitles.item.poltergust_500.vacuuming": "Spookzuiger 500 stofzuigt",
-    "e3_demo:subtitles.item.poltergust_500.vaporize": "Spookzuiger 500 verdampt"
+    "e3_demo:subtitles.item.poltergust_500.vaporize": "Spookzuiger 500 verdampt spook"
 }

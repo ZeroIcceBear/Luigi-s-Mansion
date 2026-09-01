@@ -1,0 +1,2 @@
+execute as @e[distance=..1,tag=door,tag=!open_door,tag=unopenable,tag=affected_by_interact,limit=1] if data entity @s data.go_through_command run function luigis_mansion:entities/furniture/type/door/go_through with entity @s data
+execute as @e[distance=..1,tag=door,tag=!open_door,tag=unopenable,tag=affected_by_interact,limit=1] if data entity @s data.go_through_command run tag @e[tag=searcher,limit=1] add try_opening_door
